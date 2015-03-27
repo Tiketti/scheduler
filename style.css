@@ -20,23 +20,23 @@
 .time-slot input:checked ~ label {
   background:#f2dede;
   cursor:not-allowed;
-  animation:flashBooked 0.5s ease;
+  animation:flashBooked 0.2s ease;
 }
 
 /* if the label is not checked */
 .time-slot input:not(:checked) ~ label {
   background:#6AB074;
-  animation:flashAvailable 0.5s ease;
+  animation:flashAvailable 0.4s ease;
 }
 
 /* animation for the time slot to flash red */
 @keyframes flashBooked {
   0%, 100%  { background:#f2dede; transform:scale(1); }
-  50%       { background:#F99090; transform:scale(1.5); }
+  50%       { background:#F99090; transform:scale(1.2); }
 }
 
 /* animation for the time slot to flash green */
 @keyframes flashAvailable {
   0%, 100%  { background:#6AB074; transform:scale(1); }
-  50%       { background:rgb(119, 218, 78); transform:scale(1.5); }
+  50%       { background:rgb(119, 218, 78); transform:scale(1.2); }
 }
